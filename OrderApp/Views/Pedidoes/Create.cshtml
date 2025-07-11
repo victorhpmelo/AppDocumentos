@@ -18,7 +18,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="PedidoStatus" class="control-label"></label>
-                <select asp-for="PedidoStatus" class="form-control"></select>
+                <select asp-for="PedidoStatus" class="form-control">
+                    <option>Pendente</option>
+                    <option>EmTransito</option>
+                    <option>Entregue</option>
+                </select>
                 <span asp-validation-for="PedidoStatus" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -38,7 +42,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="Sigilo" class="control-label"></label>
-                <select asp-for="Sigilo" class="form-control"></select>
+                <select asp-for="Sigilo" class="form-control">
+                    <option>Baixo</option>
+                    <option>Medio</option>
+                    <option>Alto</option>
+                </select>
                 <span asp-validation-for="Sigilo" class="text-danger"></span>
             </div>
             <div class="form-group">
